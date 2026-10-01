@@ -1,0 +1,10 @@
+# PC Games vs PlayStation
+#
+# The Sitemap line below is a TEMPLATE. Replace [DOMAIN] with your real
+# domain before going live, or search engines will be pointed at a URL
+# that does not exist.
+
+User-agent: *
+Allow: /
+
+Sitemap: [DOMAIN]/sitemap.xml

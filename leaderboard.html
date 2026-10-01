@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Local Scores - PC Games vs PlayStation</title>
+<meta name="description" content="Your best runs of the PC Games vs PlayStation mini game, stored only in your own browser. No account, no server, no other players.">
+<meta name="theme-color" content="#0070d1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="nav" aria-label="Main">
+  <div class="container nav-inner">
+    <a class="logo" href="index.html">
+      <img src="assets/img/logo.svg" alt="" width="48" height="48">
+      <span class="logo-text"><b>PC Games vs PlayStation</b><span>News &amp; Guides</span></span>
+    </a>
+
+    <div class="menu" id="nav-menu" data-nav-menu>
+      <a href="index.html">Home</a>
+      <a href="blog.html">News &amp; Guides</a>
+      <a href="lander.html">PS5 or PC?</a>
+      <a href="game.html">Mini Game</a>
+      <a href="leaderboard.html" aria-current="page">Leaderboard</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <button class="nav-toggle" id="nav-toggle" data-nav-toggle type="button" aria-expanded="false" aria-controls="nav-menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+        Menu
+      </button>
+      <a class="btn btn--sm" href="blog.html">Latest guides</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<nav class="container crumbs" aria-label="Breadcrumb">
+  <a href="index.html">Home</a><span>/</span>Local Scores
+</nav>
+
+<header class="hero" style="padding:36px 0 44px">
+  <div class="container" style="max-width:780px">
+    <span class="eyebrow">Mini game</span>
+    <h1>Your best runs</h1>
+    <p class="lead">Your scores from the <a href="game.html">mini game</a>, newest first. They are stored in this browser on this device and have never left it.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container" style="max-width:860px">
+
+    <div class="note mb-2">
+      <p><strong>These are your scores on this device, not a global ranking.</strong> There is no server holding a list of players, so nobody else's runs appear here and we cannot see yours. Clearing your browser data for this site removes this table permanently.</p>
+    </div>
+
+    <div class="card">
+      <div class="table-wrap">
+        <table class="lb-table">
+          <caption class="visually-hidden">Your recorded mini game runs, highest score first</caption>
+          <thead>
+            <tr>
+              <th scope="col">Rank</th>
+              <th scope="col">Score</th>
+              <th scope="col">Tokens</th>
+              <th scope="col">Date</th>
+            </tr>
+          </thead>
+          <tbody id="lb-body">
+            <tr><td colspan="4" class="muted">Loading your saved runs&hellip;</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small muted mt-2" id="lb-status" role="status" aria-live="polite"></p>
+    </div>
+
+    <div class="card mt-3 center">
+      <h2 style="margin-top:0">Nothing here yet?</h2>
+      <p>Play the mini game and this table fills up with your runs automatically. Each game you finish is saved, up to the best 25.</p>
+      <div class="btn-row mt-2" style="justify-content:center">
+        <a class="btn" href="game.html">Play the mini game</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/img/logo.svg" alt="" width="48" height="48">
+          <b>PC Games vs PlayStation</b>
+        </div>
+        <p>Independent PlayStation news and guides, with honest comparisons against PC gaming. Written for players deciding where to spend their money and time.</p>
+      </div>
+
+      <div>
+        <h3>Read</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">News &amp; Guides</a></li>
+          <li><a href="lander.html">PS5 or PC guide</a></li>
+          <li><a href="game.html">Mini game</a></li>
+          <li><a href="leaderboard.html">Leaderboard</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Site</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="coverage.html">What we cover</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 PC Games vs PlayStation. All rights reserved.</span>
+      <span>Contact: <span class="placeholder" title="Set this address before publishing">[contact address not set]</span></span>
+    </div>
+
+    <p class="footer-legal"><strong>Non-affiliation notice:</strong> PC Games vs PlayStation is an independent editorial site. We are not affiliated with, endorsed by, sponsored by, or connected to Sony Interactive Entertainment Inc. or any other platform holder. &ldquo;PlayStation&rdquo;, &ldquo;PS5&rdquo;, &ldquo;PS4&rdquo;, &ldquo;DualSense&rdquo; and related names and logos are trademarks of their respective owners, used here only to describe the platforms we write about. All game titles referenced are trademarks of their publishers.</p>
+  </div>
+</footer>
+
+<div class="notice-backdrop" data-age-notice>
+  <div class="notice" role="dialog" aria-modal="true" aria-labelledby="notice-title">
+    <h2 id="notice-title">Before you read: game ratings</h2>
+    <p>We review and discuss PlayStation and PC games across all age ratings, including mature titles. Every game we cover lists its official rating so you can decide what is appropriate.</p>
+    <p class="small muted">Ratings are published by ESRB in North America and PEGI in Europe. This notice is informational only, it does not restrict any page on this site, and we never send you anywhere else because of it.</p>
+    <div class="notice-actions">
+      <button class="btn" type="button" data-notice-ok>Continue to the site</button>
+      <a class="btn btn--ghost" href="https://www.esrb.org/" target="_blank" rel="noopener noreferrer">ESRB ratings</a>
+      <a class="btn btn--light" href="https://pegi.info/" target="_blank" rel="noopener noreferrer">PEGI ratings</a>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+  var body = document.getElementById('lb-body');
+  var status = document.getElementById('lb-status');
+  var runs = [];
+
+  try {
+    var raw = localStorage.getItem('pgp_leaderboard');
+    var parsed = raw ? JSON.parse(raw) : [];
+    if (Array.isArray(parsed)) {
+      runs = parsed
+        .filter(function (r) { return r && typeof r.score === 'number' && isFinite(r.score); })
+        .sort(function (a, b) { return b.score - a.score; })
+        .slice(0, 25);
+    }
+  } catch (e) {
+    status.textContent = 'Your browser is blocking local storage, so saved scores are unavailable.';
+  }
+
+  if (!runs.length) {
+    body.innerHTML = '<tr><td colspan="4" class="muted">No saved runs yet. Play the mini game and your scores will appear here.</td></tr>';
+    if (!status.textContent) status.textContent = 'Scores appear here after you finish a run.';
+    return;
+  }
+
+  body.innerHTML = runs.map(function (r, i) {
+    var when = '';
+    if (typeof r.at === 'number') {
+      try {
+        when = new Date(r.at).toLocaleString();
+      } catch (e2) { when = ''; }
+    }
+    var tokens = typeof r.coins === 'number' ? r.coins : 0;
+    return '<tr>' +
+      '<td>#' + (i + 1) + '</td>' +
+      '<td>' + r.score + '</td>' +
+      '<td>' + tokens + '</td>' +
+      '<td>' + (when || 'unknown') + '</td>' +
+      '</tr>';
+  }).join('');
+
+  status.textContent = runs.length + ' saved run' + (runs.length === 1 ? '' : 's') + ' stored in this browser.';
+})();
+</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

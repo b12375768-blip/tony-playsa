@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact - PC Games vs PlayStation</title>
+<meta name="description" content="Contact PC Games vs PlayStation. Send a correction, suggest a topic for a PlayStation or PC guide, or report a broken link. We read every message.">
+<meta name="theme-color" content="#0070d1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="nav" aria-label="Main">
+  <div class="container nav-inner">
+    <a class="logo" href="index.html">
+      <img src="assets/img/logo.svg" alt="" width="48" height="48">
+      <span class="logo-text"><b>PC Games vs PlayStation</b><span>News &amp; Guides</span></span>
+    </a>
+
+    <div class="menu" id="nav-menu" data-nav-menu>
+      <a href="index.html">Home</a>
+      <a href="blog.html">News &amp; Guides</a>
+      <a href="lander.html">PS5 or PC?</a>
+      <a href="game.html">Mini Game</a>
+      <a href="leaderboard.html">Leaderboard</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <button class="nav-toggle" id="nav-toggle" data-nav-toggle type="button" aria-expanded="false" aria-controls="nav-menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+        Menu
+      </button>
+      <a class="btn btn--sm" href="blog.html">Latest guides</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<nav class="container crumbs" aria-label="Breadcrumb">
+  <a href="index.html">Home</a><span>/</span>Contact
+</nav>
+
+<header class="hero" style="padding:36px 0 44px">
+  <div class="container" style="max-width:760px">
+    <span class="eyebrow">Contact</span>
+    <h1>Get in touch</h1>
+    <p class="lead">Corrections, topic suggestions, broken links and general questions all get read. If something we published is out of date or wrong, tell us and we will fix it or say why we cannot.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container layout-split">
+
+    <div class="card">
+      <h2 style="margin-top:0">Send us a message</h2>
+      <p>Fields marked with an asterisk are required.</p>
+
+      <div class="notice note--warn mt-2" data-contact-unconfigured>
+        <p><strong>This site is not published yet, so this form cannot work.</strong> No contact address has been set yet. Submitting the form below will tell you so instead of silently opening an empty email, and no message will be sent anywhere.</p>
+      </div>
+
+      <div class="notice note--info mt-2">
+        <p><strong>How this form will work once an address is set:</strong> there is no server behind it. When you submit, your own email application opens with the message already written to our contact address &mdash; you review it and press send. Nothing is stored on this site.</p>
+      </div>
+
+      <form class="form-grid mt-3" data-mail-form novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Your name *</label>
+            <input id="name" name="name" type="text" required autocomplete="name" placeholder="Alex Morgan" aria-describedby="name-error">
+            <div class="field-error" id="name-error" role="alert"></div>
+          </div>
+          <div class="field">
+            <label for="email">Your email *</label>
+            <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" aria-describedby="email-error">
+            <div class="field-error" id="email-error" role="alert"></div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="topic">What is it about?</label>
+          <select id="topic" name="topic">
+            <option>A correction to something we published</option>
+            <option>A topic you want us to cover</option>
+            <option>A broken link or something not working</option>
+            <option>Reporting a mini game score</option>
+            <option>Press or partnership enquiry</option>
+            <option>Something else</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Your message *</label>
+          <textarea id="message" name="message" rows="7" required placeholder="If this is a correction, tell us which page and what the accurate information is, plus a source if you have one." aria-describedby="message-error"></textarea>
+          <div class="field-error" id="message-error" role="alert"></div>
+          <p class="hint">Please include the page address if you are reporting a specific problem.</p>
+        </div>
+
+        <div>
+          <button class="btn" type="submit">Open in my email app</button>
+        </div>
+
+        <div class="form-status" data-form-status role="status" aria-live="polite"></div>
+      </form>
+    </div>
+
+    <aside class="sticky-side">
+      <div class="card">
+        <h2 style="margin-top:0">Email us directly</h2>
+        <p>If your browser does not open an email app, write to us by hand.</p>
+        <p class="mt-2"><span class="placeholder" title="Set this address before publishing">[contact address not set]</span></p>
+        <p class="small muted mt-2">No postal address and no phone number. Until an email address is published, please use the form above so you can see whether it is working.</p>
+      </div>
+
+      <div class="card mt-2">
+        <h2 style="margin-top:0">Who runs this site</h2>
+        <p>PC Games vs PlayStation is an independent editorial site. It is not connected to Sony Interactive Entertainment or any other platform holder, and we are not paid by any manufacturer to reach a particular verdict.</p>
+        <p class="mt-2"><a href="about.html">Read about this site</a></p>
+      </div>
+
+      <div class="card mt-2">
+        <h2 style="margin-top:0">Your data</h2>
+        <p>Nothing you type into the form is transmitted to us by this website. The message travels from your email app, not through us. Full detail on our <a href="privacy.html">Privacy Policy</a>.</p>
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/img/logo.svg" alt="" width="48" height="48">
+          <b>PC Games vs PlayStation</b>
+        </div>
+        <p>Independent PlayStation news and guides, with honest comparisons against PC gaming. Written for players deciding where to spend their money and time.</p>
+      </div>
+
+      <div>
+        <h3>Read</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">News &amp; Guides</a></li>
+          <li><a href="lander.html">PS5 or PC guide</a></li>
+          <li><a href="game.html">Mini game</a></li>
+          <li><a href="leaderboard.html">Leaderboard</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Site</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="coverage.html">What we cover</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 PC Games vs PlayStation. All rights reserved.</span>
+      <span>Contact: <span class="placeholder" title="Set this address before publishing">[contact address not set]</span></span>
+    </div>
+
+    <p class="footer-legal"><strong>Non-affiliation notice:</strong> PC Games vs PlayStation is an independent editorial site. We are not affiliated with, endorsed by, sponsored by, or connected to Sony Interactive Entertainment Inc. or any other platform holder. &ldquo;PlayStation&rdquo;, &ldquo;PS5&rdquo;, &ldquo;PS4&rdquo;, &ldquo;DualSense&rdquo; and related names and logos are trademarks of their respective owners, used here only to describe the platforms we write about. All game titles referenced are trademarks of their publishers.</p>
+  </div>
+</footer>
+
+<div class="notice-backdrop" data-age-notice>
+  <div class="notice" role="dialog" aria-modal="true" aria-labelledby="notice-title">
+    <h2 id="notice-title">Before you read: game ratings</h2>
+    <p>We review and discuss PlayStation and PC games across all age ratings, including mature titles. Every game we cover lists its official rating so you can decide what is appropriate.</p>
+    <p class="small muted">Ratings are published by ESRB in North America and PEGI in Europe. This notice is informational only, it does not restrict any page on this site, and we never send you anywhere else because of it.</p>
+    <div class="notice-actions">
+      <button class="btn" type="button" data-notice-ok>Continue to the site</button>
+      <a class="btn btn--ghost" href="https://www.esrb.org/" target="_blank" rel="noopener noreferrer">ESRB ratings</a>
+      <a class="btn btn--light" href="https://pegi.info/" target="_blank" rel="noopener noreferrer">PEGI ratings</a>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

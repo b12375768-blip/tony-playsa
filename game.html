@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mini Game - PC Games vs PlayStation</title>
+<meta name="description" content="A free browser mini game from PC Games vs PlayStation. Runs instantly in your browser with no download, no account and no advertising.">
+<meta name="theme-color" content="#0070d1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="nav" aria-label="Main">
+  <div class="container nav-inner">
+    <a class="logo" href="index.html">
+      <img src="assets/img/logo.svg" alt="" width="48" height="48">
+      <span class="logo-text"><b>PC Games vs PlayStation</b><span>News &amp; Guides</span></span>
+    </a>
+
+    <div class="menu" id="nav-menu" data-nav-menu>
+      <a href="index.html">Home</a>
+      <a href="blog.html">News &amp; Guides</a>
+      <a href="lander.html">PS5 or PC?</a>
+      <a href="game.html" aria-current="page">Mini Game</a>
+      <a href="leaderboard.html">Leaderboard</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <button class="nav-toggle" id="nav-toggle" data-nav-toggle type="button" aria-expanded="false" aria-controls="nav-menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+        Menu
+      </button>
+      <a class="btn btn--sm" href="blog.html">Latest guides</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<nav class="container crumbs" aria-label="Breadcrumb">
+  <a href="index.html">Home</a><span>/</span>Mini Game
+</nav>
+
+<header class="hero" style="padding:36px 0 44px">
+  <div class="container" style="max-width:780px">
+    <span class="eyebrow">Bonus</span>
+    <h1>Mini game</h1>
+    <p class="lead">A small platformer we built so this site has something playable between articles. It loads instantly, needs no download, has no advertising and requires no account.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container" style="max-width:860px">
+
+    <div class="game-panel">
+      <h2 style="margin-top:0">Runner</h2>
+      <p>Collect the gold tokens and avoid the red obstacles. Each token is worth 100 points, and you score points for every frame you survive. Hitting an obstacle ends the run.</p>
+
+      <div class="game-stats">
+        <div class="game-stat">
+          <div class="game-stat-value" id="score">0</div>
+          <div class="game-stat-label">Score</div>
+        </div>
+        <div class="game-stat">
+          <div class="game-stat-value" id="coins">0</div>
+          <div class="game-stat-label">Tokens</div>
+        </div>
+        <div class="game-stat">
+          <div class="game-stat-value" id="highScore">0</div>
+          <div class="game-stat-label">Best on this device</div>
+        </div>
+      </div>
+
+      <div class="game-stage">
+        <canvas id="gameCanvas" width="800" height="360" role="img" aria-label="Side-on platform game. Move the blue character left and right to collect gold tokens and avoid red obstacles falling from above."></canvas>
+      </div>
+
+      <h3 style="color:#fff;text-align:center">Controls</h3>
+      <div class="game-controls-grid">
+        <div class="control-key">
+          <span class="key">W / Up Arrow</span>
+          <span class="act">Jump</span>
+        </div>
+        <div class="control-key">
+          <span class="key">A / Left Arrow</span>
+          <span class="act">Move left</span>
+        </div>
+        <div class="control-key">
+          <span class="key">S / Down Arrow</span>
+          <span class="act">Move down</span>
+        </div>
+        <div class="control-key">
+          <span class="key">D / Right Arrow</span>
+          <span class="act">Move right</span>
+        </div>
+        <div class="control-key">
+          <span class="key">Space</span>
+          <span class="act">Jump</span>
+        </div>
+        <div class="control-key">
+          <span class="key">P</span>
+          <span class="act">Pause</span>
+        </div>
+      </div>
+
+      <div class="touch-pad" data-touch-pad aria-label="On-screen controls">
+        <button class="touch-btn" type="button" data-dir="left" aria-label="Move left">&#8592;</button>
+        <button class="touch-btn" type="button" data-dir="up" aria-label="Jump">&#8593;</button>
+        <button class="touch-btn" type="button" data-dir="right" aria-label="Move right">&#8594;</button>
+        <button class="touch-btn" type="button" data-dir="down" aria-label="Move down">&#8595;</button>
+      </div>
+
+      <div class="game-actions">
+        <button class="btn" type="button" id="startBtn">Start demo</button>
+        <button class="btn btn--ghost" type="button" id="resetBtn">Reset</button>
+      </div>
+
+      <p class="small mt-3" id="gameLive" role="status" aria-live="polite">Demo not running.</p>
+    </div>
+
+    <div class="card mt-3">
+      <h2 class="mt-0">How to score well</h2>
+      <p>You gain a point for every frame you stay alive and 100 points for each gold token. Obstacles fall from the top of the screen and are never in the same place twice, so there is no single safe lane to memorise. Hitting one ends the run immediately.</p>
+      <p>Two habits get you most of the way: move constantly so the character is never parked under a falling obstacle, and jump only when a token is within reach rather than jumping constantly.</p>
+      <div class="btn-row mt-2">
+        <a class="btn" href="leaderboard.html">See your best runs</a>
+      </div>
+    </div>
+
+    <div class="card mt-3">
+      <h2 class="mt-0">Why there is a game on a news site</h2>
+      <p>People spend a lot of time comparing consoles and settings without ever playing anything. A tiny thing you can pick up for thirty seconds serves that better than another table of specifications.</p>
+      <p>It is also self-contained: no third-party game engine, no tracking, no network calls. Everything runs in your browser using the canvas element, and the only data written is your score in your browser's local storage.</p>
+      <p>If you would rather read, start with the <a href="lander.html">PS5 or PC buying guide</a>.</p>
+    </div>
+
+    <div class="card mt-3">
+      <h2 class="mt-0">How your score is handled</h2>
+      <p>Scores and token counts are saved in this browser's local storage on this device. They are never uploaded to us, we cannot see them, and nobody else sees them. Clearing your browser data for this site deletes them for good.</p>
+      <p>That is also why the <a href="leaderboard.html">leaderboard</a> shows your own runs on this device rather than a global ranking of other players. There is no server holding a list.</p>
+      <p class="mt-2 small muted">Full detail in our <a href="privacy.html">Privacy Policy</a>.</p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/img/logo.svg" alt="" width="48" height="48">
+          <b>PC Games vs PlayStation</b>
+        </div>
+        <p>Independent PlayStation news and guides, with honest comparisons against PC gaming. Written for players deciding where to spend their money and time.</p>
+      </div>
+
+      <div>
+        <h3>Read</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">News &amp; Guides</a></li>
+          <li><a href="lander.html">PS5 or PC guide</a></li>
+          <li><a href="game.html">Mini game</a></li>
+          <li><a href="leaderboard.html">Leaderboard</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Site</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="coverage.html">What we cover</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 PC Games vs PlayStation. All rights reserved.</span>
+      <span>Contact: <span class="placeholder" title="Set this address before publishing">[contact address not set]</span></span>
+    </div>
+
+    <p class="footer-legal"><strong>Non-affiliation notice:</strong> PC Games vs PlayStation is an independent editorial site. We are not affiliated with, endorsed by, sponsored by, or connected to Sony Interactive Entertainment Inc. or any other platform holder. &ldquo;PlayStation&rdquo;, &ldquo;PS5&rdquo;, &ldquo;PS4&rdquo;, &ldquo;DualSense&rdquo; and related names and logos are trademarks of their respective owners, used here only to describe the platforms we write about. All game titles referenced are trademarks of their publishers.</p>
+  </div>
+</footer>
+
+<div class="notice-backdrop" data-age-notice>
+  <div class="notice" role="dialog" aria-modal="true" aria-labelledby="notice-title">
+    <h2 id="notice-title">Before you read: game ratings</h2>
+    <p>We review and discuss PlayStation and PC games across all age ratings, including mature titles. Every game we cover lists its official rating so you can decide what is appropriate.</p>
+    <p class="small muted">Ratings are published by ESRB in North America and PEGI in Europe. This notice is informational only, it does not restrict any page on this site, and we never send you anywhere else because of it.</p>
+    <div class="notice-actions">
+      <button class="btn" type="button" data-notice-ok>Continue to the site</button>
+      <a class="btn btn--ghost" href="https://www.esrb.org/" target="_blank" rel="noopener noreferrer">ESRB ratings</a>
+      <a class="btn btn--light" href="https://pegi.info/" target="_blank" rel="noopener noreferrer">PEGI ratings</a>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/game.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
